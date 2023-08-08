@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Times New Roman';
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+
+}
+.calculator{
+    border: 2px solid #eee;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #4b70f4, #000000);
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    box-shadow: 0px 0px 24px #030823;
+    padding: 55px 20px;
+    transition: transform .2s; 
+}
+.calculator:hover {
+    transform: scale(1.5); 
+}
+.calculator span{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #eee;
+    border-radius: 50px;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 500;
+    margin-right: 10px;
+
+}
+.calculator .operations{
+    background: #5a7aba;
+    color: #fff;
+}
+.calculator .clear{
+    background: #fd7272;
+
+}
+.calculator .inputArea{
+    grid-column: span 4;
+    padding: 20px 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.5em;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 25px;
+}
+.calculator .plus{
+    grid-row: span 2;
+    height: 108px;
+    line-height: 110px;
+    background: #5a7aba;
+    color: #eee;
+}
+.calculator .equal{
+    grid-column: span 2;
+    width:130px;
+    background:#fd7272;
+    font-size: 1.8em;
+}
+#history{
+    border: 2px solid #eee;
+    border-radius: 5px;
+    width:240px;
+    height: 371.2px;
+    overflow-y:scroll;
+    font-size: 1.1em;
+    background: linear-gradient(45deg, #4b70f4, #050116);
+    box-shadow: 0px 0px 24px #030823;
+    padding: 35px 20px;
+    transition: transform .2s;
+}
+#history:hover{
+    transform: scale(1.5);
+}
+#history::-webkit-scrollbar{
+    width: 0;
+}
+#history h3{
+    padding: 10px 0px;
+    font-size: 1.2em;
+    color: #eee;
+}
+#history p:last-child{
+    font-size: 1.3em;
+    font-weight:500;
+    color: #eee;
+}
+a{
+color:#393e46;
+}
